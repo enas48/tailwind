@@ -1,5 +1,5 @@
 import Faq from "./components/sections/faq";
-import Features from "./components/sections/features";
+import Features from "./components/sections/features/features";
 import Header from "./components/sections/header/header";
 import Navbar from "./components/navbar";
 import Pricing from "./components/sections/pricing";

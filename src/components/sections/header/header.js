@@ -31,7 +31,7 @@ export default function Header() {
                   p-4"
       >
         <div className="md:w-1/2">
-          <div className="rounded-full w-fit flex items-center bg-[#e2eaed]">
+          <div className="rounded-full w-fit flex items-center bg-[#e2eaed] ">
             <img
               className="p-2 bg-[#feaa25] rounded-full"
               alt="icon"

@@ -17,8 +17,8 @@ export default function Navbar() {
     console.log(to);
   };
   return (
-    <nav className="w-screen m-auto max-w-screen-xl bg-white px-4 py-2 h-[60px] sticky z-20 left-0 right-0 top-0">
-      <div className={` flex items-center 
+    <nav className=" mx-auto  bg-white px-4 py-2 h-[60px] sticky z-20 left-0 right-0 top-0">
+      <div className={` flex items-center max-w-screen-xl mx-auto
       ${navActive?'flex-col':''}`}>
         <img
         className={`cursor-pointer ${navActive?'self-start':''}`}

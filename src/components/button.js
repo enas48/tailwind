@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Button({label,secondary,onClick}) {
+export default function Button({label,secondary,large,onClick}) {
   return (
     <button onClick={onClick} className={`
     rounded-full
@@ -12,6 +12,7 @@ export default function Button({label,secondary,onClick}) {
      ease-out 
      hover:ease-in
      whitespace-nowrap
+     ${large?'px-10':'px-6'}
     ${secondary?'text-[#2500f9]':'text-white'}
     ${secondary?'bg-white':'bg-[#2500f9]'}
     ${secondary?'hover:bg-slate-50':'hover:bg-[#260bc0]'}

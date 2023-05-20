@@ -8,8 +8,8 @@ export default function Card({ icon, title, body, titleColor, center, row }) {
     <div
       className={`
     flex
-     p-3 
-     m-2
+     md:p-3 
+     md:m-2
      max-w-xs
     ${row ? "flex-row items-center" : "flex-col"}
     ${center ? "items-center" : "items-start"}
