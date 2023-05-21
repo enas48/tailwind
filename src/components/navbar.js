@@ -6,6 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 
 export default function Navbar() {
     const[navActive,setActive]=useState(false);
+    const [section,setSection]=useState('section1');
 
   const handleClick = useCallback(() => {
     console.log("clicked");
@@ -14,7 +15,8 @@ export default function Navbar() {
     scroll.scrollToTop();
   };
   const handleSetActive = (to) => {
-    console.log(to);
+    setActive(false);
+    setSection(to);
   };
   return (
     <nav className=" mx-auto  bg-white px-4 py-2 h-[60px] sticky z-20 left-0 right-0 top-0">
@@ -40,7 +42,8 @@ export default function Navbar() {
         ease-out 
         ${navActive?'flex flex-col m-auto w-full py-2':' hidden'}`}>
 
-          <li className="cursor-pointer">
+          <li className={`cursor-pointer
+          ${section=='section1'?'text-[#fcae61]':'text-[#242f51]'}`}>
             <Link
               activeClass="active"
               to="section1"
@@ -54,7 +57,8 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li className="cursor-pointer">
+          <li className={`cursor-pointer
+          ${section=='section2'?'text-[#fcae61]':'text-[#242f51]'}`}>
             <Link
               activeClass="active"
               to="section2"
@@ -67,7 +71,8 @@ export default function Navbar() {
               Key Features
             </Link>
           </li>
-          <li className="cursor-pointer">
+          <li className={`cursor-pointer
+          ${section=='section3'?'text-[#fcae61]':'text-[#242f51]'}`}>
             <Link
               activeClass="active"
               to="section3"
@@ -81,7 +86,8 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li className="cursor-pointer">
+          <li className={`cursor-pointer
+          ${section=='section4'?'text-[#fcae61]':'text-[#242f51]'}`}>
             <Link
               activeClass="active"
               to="section4"
@@ -94,7 +100,8 @@ export default function Navbar() {
               Testiminial
             </Link>
           </li>
-          <li className="cursor-pointer">
+          <li className={`cursor-pointer
+          ${section=='section5'?'text-[#fcae61]':'text-[#242f51]'}`}>
             <Link
               activeClass="active"
               to="section5"

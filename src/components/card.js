@@ -8,8 +8,6 @@ export default function Card({ icon, title, body, titleColor, center, row }) {
     <div
       className={`
     flex
-     md:p-3 
-     md:m-2
      max-w-xs
     ${row ? "flex-row items-center" : "flex-col"}
     ${center ? "items-center" : "items-start"}
@@ -29,7 +27,7 @@ export default function Card({ icon, title, body, titleColor, center, row }) {
         <h4 className="text-lg pb-2 font-bold" style={divStyle}>
           {title}
         </h4>
-        <p className="text-base text-slate-500">{body}</p>
+        <p className="text-base text-slate-500 max-w-[17rem]">{body}</p>
       </div>
     </div>
   );

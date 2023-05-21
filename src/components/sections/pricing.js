@@ -17,7 +17,7 @@ export default function Pricing() {
       <div id="section3" className="p-4">
 
         <div className="py-10  lg:pb-10 md:text-center  flex flex-col items-center">
-          <h3 className="font-bold my-6 text-3xl/[40px] max-w-sm px-4">
+          <h3 className="font-bold my-6 text-3xl/[40px] max-w-2xl px-4">
             Get awesome features, without
             extra charges
           </h3>

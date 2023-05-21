@@ -20,10 +20,11 @@ export default function Jackboats() {
                   h-full
                   max-w-[1200px]
                   mx-auto
-                  p-4"
+                  p-4
+                  mb-2 lg:mb-4"
       >
         <div className="md:w-1/2 md:border-r-2">
-          <h3 className="font-bold  md:px-6 text-3xl/[40px] max-w-sm ml-auto">
+          <h3 className="font-bold pb-6 md:px-6 text-3xl/[40px] max-w-sm ml-auto">
             Smart jackpots that you may love this anytime 	&amp; anywhere
           </h3>
         </div>

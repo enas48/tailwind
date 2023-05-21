@@ -38,6 +38,7 @@ export default function Ourfeatures() {
               Increase productivity with a simple to-do app. app for managing
               your personal budgets.
             </p>
+            <div className="flex flex-col gap-4">
             <Card
               icon="assets/features/icon1.png"
               row
@@ -65,6 +66,7 @@ export default function Ourfeatures() {
               home collect a sample from the
               news your blood tests."
             />
+            </div>
           </div>
         </div>
   
